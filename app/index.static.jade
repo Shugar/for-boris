@@ -11,42 +11,222 @@ head
 
   script.
     require('initialize');
-
-
+    require('main');
+    new WOW().init();
 body
 
-.contain
-  .slider
-    .scroller
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
-      .anydiv
+  nav
+    .content.wow.fadeIn
+      p.date 16
+      img.leftside(src="images/calendar.png")
+      button.menu(href="#" style="background-image: url(images/menu_burger.png)")
+      button.settings(href="#" style="background-image: url(images/settings_cog.png)")
+      img.leftside(src="images/pink_flag.png")
+      .midinfo
+        .course(style="margin-right: 10px")
+          img(src="images/euro_logo.png")
+          p 68,3681
+          p.pink +5,9870
+        .course
+          img.dollar(src="images/dollar_logo.png")
+          p 56,2376
+          p.pink +6,4987
+        .wheather
+          img.oner(src="images/cloud.png")
+          p -2 C
+            img.twoer(src="images/gradus_dot.png")
+
+  .all
+    .search.wow.fadeIn
+      a.profile.clearfix(href="#user") ПЁТР ЛУЖКОВ
+        img(src="images/user_icon.png")
+      .logo
+        p.hat КАК КРОЛИКА ИЗ ШЛЯ
+      .searcher
+        a(href="#")
+          img(src="images/bunny2.png")
+          button(type="submit" style="background-image: url(images/magnifier.png)") ПОИСК
+          input(type="search" placeholder="Например, услуги флориста")
+    .banner.wow.fadeIn
+    .uslugi.clearfix
+      .anydiv.one-1.wow.fadeIn
+        p услуги няни
+      .anydiv.one-2.wow.fadeIn
+      .anydiv.one-3.wow.fadeIn
+        p пошив спец. формы
+      .anydiv.one-4.wow.fadeIn
+      .anydiv.one-5.wow.fadeIn
+        p ведущий мероприятий
+      .anydiv.two-1.wow.fadeIn
+      .anydiv.two-2.wow.fadeIn
+        p ведущий мероприятий
+      .anydiv.two-3.wow.fadeIn
+      .anydiv.two-4.wow.fadeIn
+        p услуги няни
+      .anydiv.two-5.wow.fadeIn
+      .anydiv.three-1.wow.fadeIn
+        p услуги няни
+      .anydiv.three-2.wow.fadeIn
+      .anydiv.three-3.wow.fadeIn
+        p пошив спец. формы
+      .anydiv.three-4.wow.fadeIn
+      .anydiv.three-5.wow.fadeIn
+        p ведущий мероприятий
+    .news.wow.fadeInUp
+      .novosty
+        img.close(src="images/closing_news.png")
+        .marginer
+          a(href="#")
+            img(src="images/newburger.png")
+          .texter
+            h2 НОВОСТИ
+          a(href="#")
+            img.picker(src="images/news_picker.png")
+      .posts
+        .first-news.wow.fadeIn
+          img(src="images/trehkom.png")
+          h1 Как выжать максимум из типовой трешки: пример из Москвы
+          p Чтобы разместить вещи большой семьи в обычной московской квартире, дизайнер проэкта сделал перепланировку. Он по максимуму использовал высоту потолков и даже организовал рабочее место
+        .third-news.wow.fadeIn
+          img(src="images/gadgets2015.png")
+          h1 Пять самых ожидаемых гаджетов 2015 года
+          p Представляем пятерку наиболее интересных технических устройств, появление которых в продаже ожидается в этом году
+        .second-news.wow.fadeIn
+          img(src="images/cars.png")
+          h1 Почему сегодня нельзя купить новый автомобиль
+          p Запасайтесь попкорном: рушиться Колосс будет стремительно и красиво
+        .fourth-news.wow.fadeIn
+          img(src="images/shash.png")
+          h1 Чем хороша для здоровья готовка на гриле
+          p Гриль &mdash; один из самых полезных способов готовки, если делать всё правильно. Гриль может быть не только способом приготовить ароматную еду, но и одним из базовых элементов здорового питания
+
+    .spec.wow.fadeInUp.clearfix
+      .line
+        img.close-2(src="images/closing_news.png")
+        .center
+          img(src="images/spec_burger.png")
+          p СПЕЦПРЕДЛОЖЕНИЯ
+          img.picker(src="images/news_picker.png")
+        .predlojenia
+          .first.wow.fadeIn.clearfix
+            img(src="images/m-500.png")
+            p.title Цемент М-500
+            p.price 6500 руб
+            a.podrobnee(href="#") подробнее...
+
+          .second.wow.fadeIn.clearfix
+            img(src="images/osnovit.png")
+            p.title Сухие смеси "Основит"
+            p.price 19 500 руб
+            a.podrobnee(href="#") подробнее...
+
+          .third.wow.fadeIn.clearfix
+            img(src="images/insulation.png")
+            p.title Утеплители
+            p.price 4 750 руб
+            a.podrobnee(href="#") подробнее...
+
+          .fourth.wow.fadeIn.clearfix
+            img(src="images/bricks.png")
+            p.title Кирпичи
+            p.price 65 руб
+            a.podrobnee(href="#") подробнее.
+
+  .footer
+      .menue
+        .uler
+          ul
+            li.lier
+              a(href="#") Главная
+            li 
+              a(href="#") спецпредложения
+            li
+              a(href="#") категории
+            li
+              a(href="#") сотрудничество
+            li
+              a(href="#") вопросы
+          ul.bottomer
+            li.lier
+              a(href="#") Реклама
+            li 
+              a(href="#") как разместить
+            li
+              a(href="#") как убрать
+            li
+              a(href="#") сотрудничество
+        .uler2
+          ul
+            li.lier 
+              a(href="#") Рубрикатор
+            li 
+              a(href="#") строительство
+            li
+              a(href="#") бытовая техника
+            li
+              a(href="#") грузоперевозки
+            li
+              a(href="#") офисное оборудование
+            li 
+              a(href="#") мебель
+            li
+              a(href="#") инструменты
+            li
+              a(href="#") канцтовары
+            li
+              a(href="#") электроника
+            li
+              a(href="#") оргтехника
+            li
+              a(href="#") медицина
+        .uler3
+          ul
+            li.lier
+              a(href="#") Реклама, сми
+            li 
+              a(href="#") строительство
+            li
+              a(href="#") бытовая техника
+            li
+              a(href="#") грузоперевозки
+            li
+              a(href="#") офисное оборудование
+            li 
+              a(href="#") мебель
+            li
+              a(href="#") инструменты
+            li
+              a(href="#") канцтовары
+            li
+              a(href="#") электроника
+            li
+              a(href="#") оргтехника
+            li
+              a(href="#") медицина
+        .uler4
+          ul
+            li.lier 
+              a(href="#") Работа
+            li 
+              a(href="#") вакансии
+            li
+              a(href="#") предложения
+            li
+              a(href="#") сотрудничество
+            li
+              a(href="#") вопросы
+          ul.bottomer
+            li.lier
+              a(href="#") Реклама
+            li 
+              a(href="#") как разместить
+            li
+              a(href="#") как убрать
+            li
+              a(href="#") сотрудничесто
+
+  .footer-2
+     .all
+       .left
+           p Copyright 2015
+          

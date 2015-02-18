@@ -29,6 +29,7 @@
     "jaded-brunch": "~1.7.11"
   },
   "dependencies": {
-    "brunch": "^1.7.19"
+    "brunch": "^1.7.19",
+    "jeet": "^6.1.2"
   }
 }
